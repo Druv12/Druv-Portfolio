@@ -1,0 +1,90 @@
+$primary: #06BBCC;
+$light: #F0FBFC;
+$dark: #181d38;
+
+$font-family-base: 'Heebo', sans-serif;
+$headings-font-family: 'Nunito', sans-serif;
+
+$body-color: #52565b;
+$headings-color: $dark;
+
+$headings-font-weight: 700;
+$display-font-weight: 800;
+
+$enable-responsive-font-sizes: true;
+
+$border-radius: 0px;
+$link-decoration: none;
+
+$enable-negative-margins: true;
+
+@import "bootstrap/scss/bootstrap";
+
+// Custom Media Queries for Fixing Layout Issues
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .custom-header {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .custom-footer {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-header {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+  .custom-footer {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+}
+
+/ Responsive Images /
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/ Fix Grid System Gaps /
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 0 -15px;
+}
+
+/ Navbar Enhancements /
+.navbar {
+  background-color: $light;
+  border-bottom: 1px solid $primary;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+/ Cards /
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card img {
+  border-bottom: 1px solid $primary;
+}
+
+/ Footer */
+footer {
+  background-color: $dark;
+  color: $light;
+  text-align: center;
+  padding: 1.5rem 0;
+}
